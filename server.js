@@ -9,6 +9,11 @@ var PORT = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+
+//reservations data
+let reservations = [];
+let watiList = [];
+
 app.listen(PORT, function () {
   // Callback triggered when server is successfully listening. Hurray!
   console.log("Server listening on Port:" + PORT);
